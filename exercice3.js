@@ -15,3 +15,14 @@ function sliceFinder(A,S){
     }
     return countNum;
 }
+const sizes=[10,100,1000];
+const S=100;
+
+for(const size of sizes){
+    const A=generateRandomArray(size,1,100);
+    const startTime=performance.now();
+    const count = sliceFinder(A,S);
+    const endTime = performance.now();
+    console.log(`N = ${size}, Time taken: ${endTime - startTime} ms, Count: ${count}`);
+
+}
