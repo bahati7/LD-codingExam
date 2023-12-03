@@ -1,3 +1,4 @@
+//this function prints all prime numbers
 function printAllPrimes(N){
     const ourPrimes = [];
     const timeStart = new Date().getTime();
